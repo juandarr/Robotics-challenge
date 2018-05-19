@@ -19,6 +19,6 @@ To install the package to teleoperate the entity the following command was used:
 sudo apt-get install ros-kinetic-teleop-twist-keyboard
 ```
 
-To see the linear and angular speed use inline rostopic echo as in the previous task.
+To see the linear and angular speed use **rostopic echo** as in the previous task.
 
 ## Task 3.1 
