@@ -37,7 +37,7 @@ rosbag play Task3_1.bag
 
 ## Task 3.3
 See *Task3_3.png* to visualize proof of the solution. 
-The created node (location_monitoring) publishes the requested information to three different topics: *robotPosition*, *closestObject* and *targetLandmark*. This node was packaged in a python script and can be created with the command `rosrun location_monitor location_monitor.py` which will create the three topics mentioned before. 
+The created node (location_monitoring) publishes the requested information to three different topics: *robotPosition*, *closestObject* and *targetLandmark*. This node was packaged in a python script and can be executed with the command `rosrun location_monitor location_monitor.py` which will create the three topics mentioned before. 
 To visualize the robot in motion given the messages stored in the bag file Task3_3.bag and see the published topics showing the requested information for the task follow the next commands in different terminals:
 
 ```bash
@@ -57,7 +57,7 @@ To see the which is closest landmark to the robot and the distance at any moment
 ```bash
 rostopic echo /closestObject
 ```
-To see wether the robot is in a specific landmark region use:
+To see whether the robot is in a specific landmark region use:
 ```bash
 rostopic echo /targetLandmark
 ```
