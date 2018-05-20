@@ -4,7 +4,6 @@
 ## -> closestObject: closest object to the robot and the distance
 ## -> robotPosition: position x and y of the robot
 ## -> targetLandmark: show a message when the robot is near or outside a specific set of landmarks
-## to the 'chatter' topic
 
 import rospy
 import math
