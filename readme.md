@@ -85,7 +85,8 @@ This command provides teleoperation function to control the turtlebot in simulat
 roslaunch turtlebot_teleop keyboard_teleop.launch
 ```
 
-Given this setting, the command rosbag is used for 60 seconds and stores the data associated to the mapping and location. The file Task3_4.bag is created. To play and visualize the map data open RVIZ with `rosrun rviz rviz`, add components for the map, robot, laserscan, costmap and run the bag file with
+Given this setting, the command rosbag is used for 60 seconds and stores the data associated to the mapping and location. The file Task3_4.bag stores the requested data for the task. To play and visualize the map data open RVIZ with `rosrun rviz rviz`, then add components for the map, robotModel, laserscan, costmap and run the bag file with
 ```bash
 rosbag play Task3_4.bag
 ``` 
+Don't forget to add the topics relevants for each component, such as `/map` for map and  `scan` for laserscan.
